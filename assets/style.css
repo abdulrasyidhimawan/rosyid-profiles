@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.x {
+    width: 246px;
+    overflow: hidden;
+}
+
+.x .text {
+    position: relative;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.x .text.first-text {
+    color: black;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    ;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.card-custom {
+    border-radius: 10px;
+
+}
+
+label {
+    color: white;
+}
+
+textarea {
+    color: white;
+}
+
+Header {
+    background-image: url(assets/handshake.svg);
+}
+
+hr {
+    left: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+p {
+    color: white;
+    font-family: monospace;
+}
+
+
+body {
+    background-color: rgb(49, 49, 49);
+}
+
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#content {
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#clicked {
+    font-weight: 800;
+}
+
+#navp {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+#poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#pp {
+    border-radius: 100%;
+}
